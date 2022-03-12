@@ -1,0 +1,30 @@
+{
+  "name": "weird-inline-style-build-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx slinkity --serve --incremental",
+    "build": "npx slinkity",
+    "preview": "npx vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andystevenson/weird-inline-style-build-bug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andystevenson/weird-inline-style-build-bug/issues"
+  },
+  "homepage": "https://github.com/andystevenson/weird-inline-style-build-bug#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "open-props": "^1.3.9",
+    "postcss": "^8.4.8",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-jit-props": "^1.0.4",
+    "slinkity": "^0.6.1"
+  }
+}

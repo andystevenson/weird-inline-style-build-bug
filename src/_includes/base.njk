@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strange</title>
+  </head>
+  <style>
+    html {
+      block-size: 100%;
+    }
+    body {
+      min-block-size: 100%;
+      display: grid;
+      place-content: center;
+      text-align: center;
+    }
+    section {
+      min-block-size: 30vh;
+      aspect-ratio: 1;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <h1>style build bug?</h1>
+    <picture>
+      <img src="https://picsum.photos/300?grayscale" alt="">
+    </picture>
+    <section class='nested' style="background-image: url(/images/me.jpg)">
+      <h2>{{title}}</h2>
+    </section>
+    {{ content | safe}}
+  </body>
+</html>
